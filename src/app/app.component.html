@@ -1,4 +1,5 @@
 <div>
   app component: <br/>
-  <app-exercise-component [displayText]="'test string'"></app-exercise-component>
+  <app-exercise-component [displayText]="displayText"></app-exercise-component>
+  <app-input-component (newItemEvent)="addItem($event)"></app-input-component>
 </div>
