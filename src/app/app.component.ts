@@ -7,12 +7,11 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'levigo-exercise';
-  displayText: string = "";
+  strings : string[] = ['Default: erster String', 'Default: zweiter String'];
 
   addItem($event: string) {
     if ($event !== undefined) {
-      this.displayText = $event;
-      console.log(this.displayText);
+      this.strings.push($event);
     }
   }
 }
